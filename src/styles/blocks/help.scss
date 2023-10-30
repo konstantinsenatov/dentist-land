@@ -1,0 +1,90 @@
+.help {
+	margin-top: 190px;
+	position: relative;
+	padding: 65px 0;
+	background: linear-gradient(137.49deg, #159E74 -5.87%, #2A47A0 109.35%);
+	overflow: hidden;
+	@media (max-width: 768px){
+		margin-top: 60px;
+		padding: 30px 0;
+	}
+	&__img {
+		width: 485px;
+		height: 393px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: url('../images/help/1.png') 0 0 / 100% 100% no-repeat;
+		@media (max-width: 1200px){
+			bottom: -190px;
+		}
+		@media (max-width: 768px){
+			bottom: -250px;
+		}
+		@media (max-width: 500px){
+			width: 237px;
+			height: 121px;
+			bottom: 0;
+			background: url('../images/help/1-mob.png') 0 0 / 100% 100% no-repeat;
+		}
+	}
+	
+		&__container {
+			position: relative;
+		}
+	
+		&__title {
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 40px;
+			line-height: 48px;
+			letter-spacing: -0.04em;
+			color: #ECEBEB;
+			max-width: 760px;
+			@media (max-width: 768px){
+				font-size: 19px;
+				line-height: 23px;
+			}
+			@media (max-width: 400px){
+				padding-right: 35px;
+			}
+		}
+	
+		&__text {
+			max-width: 760px;
+			margin-top: 30px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 130%;
+			color: #ECEBEB;
+			@media (max-width: 768px){
+				font-size: 14px;
+				line-height: 130%;
+			}
+		}
+	
+		&__btn {
+			cursor: pointer;
+			margin-top: 55px;
+			background: #1B1B1B;
+			border-radius: 8px;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 22px;
+			color: #ECECEC;
+			padding: 20px 40px;
+			display: inline-block;
+			text-align: center;
+			@media (max-width: 768px){
+				font-size: 14px;
+				line-height: 130%;
+				width: 100%;
+				margin-top: 30px;
+			}
+		}
+}

@@ -1,0 +1,135 @@
+.footer {
+	background: #282828;
+	border-radius: 21px 21px 0px 0px;
+	padding: 100px 0 111px;
+	@media (max-width: 768px){
+		padding: 30px 0 41px;
+	}
+	position: relative;
+	&::after{
+		content:'';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 11px;
+		background: linear-gradient(265.54deg, #159E74 33.48%, #2A47A0 48.67%);
+	}
+	&__conatiner {
+		display: flex;
+		align-items: center;
+		@media (max-width: 1150px){
+			flex-wrap: wrap;
+			margin-top: -30px;
+		}
+		span {
+			display: flex;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 130%;
+			letter-spacing: -0.02em;
+			color: #ECECEC;
+			&:nth-child(2){
+				margin-top: 10px;
+			}
+			a {
+				display: inline-block;
+				margin-left: 5px;
+				font-family: 'Inter';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 130%;
+				letter-spacing: -0.02em;
+				color: #ECECEC;
+				text-decoration: none;
+				position: relative;
+				&::before{
+					content:'';
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					height: 1px;
+					background-color: #ffffff;
+					opacity: 0;
+					transition: all 0.3s ease 0s;
+				}
+				&:hover{
+					&::before{
+						opacity: 1;
+					}
+				}
+			}
+		}
+		>* {
+			flex: 0 1 25%;
+			@media (max-width: 1150px){
+				flex: 0 1 50%;
+				margin-top: 30px;
+			}
+			@media (max-width: 600px){
+				flex: 1 1 100%;
+			}
+		}
+	}
+	
+		&__left {
+			@media (max-width: 1150px){
+				order: -1;
+			}
+			@media (max-width: 600px){
+				order: 1;
+			}
+		}
+	
+		&__soc {
+			display: flex;
+			align-items: center;
+			@media (max-width: 600px){
+				order: 1;
+			}
+			a {
+				&:not(:first-child) {
+					margin-left: 20px;
+				}
+				transition: all 0.3s ease 0s;
+				svg {
+					circle {
+						transition: all 0.3s ease 0s;
+					}
+				}
+				&:hover{
+					svg {
+						circle {
+							fill-opacity: 0.2;
+						}
+					}
+				}
+			}
+		}
+	
+		&__payment {
+			display: flex;
+			align-items: center;
+			@media (max-width: 600px){
+				order: 1;
+			}
+			img {
+				&:not(:first-child) {
+					margin-left: 20px;
+				}
+			}
+		}
+	
+		&__right {
+			@media (max-width: 1150px){
+				order: -1;
+			}
+			@media (max-width: 600px){
+				order: 1;
+			}
+		}
+}

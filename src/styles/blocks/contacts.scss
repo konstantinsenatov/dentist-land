@@ -1,0 +1,205 @@
+.contacts{
+	margin-top: 190px;
+	margin-bottom: 190px;
+	@media (max-width: 768px){
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+	@media (max-width: 600px){
+		margin-bottom: 228px;
+	}
+	&__title {
+		@media (max-width: 768px){
+			font-size: 48px;
+		}
+	}
+	&__map{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		&-wrapper{
+			margin-top: 70px;
+			position: relative;
+			padding-top: 47.2%;
+			@media (max-width: 768px){
+				padding-top: 106.87%;
+				margin-top: 30px;
+			}
+			@media (max-width: 500px) {
+				padding-top: calc(176.87% + 35px);
+				margin: 30px -10px 0;
+			}
+		} 
+	} 
+		&__block-loc {
+			width: 285px;
+			height: 100%;
+
+			padding: 100px 40px 100px 42px;
+			display: flex;
+			flex-direction: column;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			color: #161616;
+							position: relative;
+							>* {
+								position: relative;
+								z-index: 1;
+							}
+								&::before {
+									content: '';
+									position: absolute;
+									z-index: 0;
+									top: 0;
+									left: 0;
+									right: 0;
+									bottom: 0;
+									box-shadow: 0 0 10px #cccccc;
+									filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.3));
+									backdrop-filter: blur(0px);
+									border-radius: 21px;
+									border: 1px solid transparent;
+									box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+									background:
+										linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 1) 101.02%),
+										linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 1), rgba($color: #7D7D7D, $alpha: 1));
+									background-clip: padding-box, border-box;
+									background-origin: padding-box, border-box;
+									opacity: 0.8;
+								}
+			@media (max-width: 1023px){
+				padding: 30px 15px;
+				max-width: 200px;
+				font-size: 14px;
+				line-height: 130%;
+			}
+			@media (max-width: 768px){
+				max-width: 300px;
+				padding: 30px 50px;
+			}
+			@media (max-width: 600px){
+			}
+			@media (max-width: 500px){
+				max-width: 100%;
+				width: 100%;
+			}
+			&-wrapper {
+				position: absolute;
+				top: 43px;
+				right: 102px;
+				bottom: 31px;
+				@media (max-width: 1023px){
+					right: 20px;
+				}
+				@media (max-width: 768px){
+					top: auto;
+					right: 0;
+					bottom: 0px;
+				}
+				@media (max-width: 600px){
+					bottom: -168px;
+				}
+				@media (max-width: 500px){
+					padding: 0 10px;
+				}
+			}
+		} 
+		&__adress {
+
+		} 
+		&__tel {
+			margin-top: 15px;
+			display: flex;
+		
+			@media (max-width: 1023px) {
+				flex-direction: column;
+			}
+			@media (max-width: 768px){
+				margin-top: 10px;
+				flex-direction: row;
+			}
+			a {
+				margin-left: 3px;
+				@media (max-width: 1023px){
+					margin-left: 0;
+				}
+				@media (max-width: 768px){
+					margin-left: 3px;
+				}
+			}
+		} 
+		&__email {
+			display: flex;
+			@media (max-width: 1023px){
+				flex-direction: column;
+			}
+			@media (max-width: 768px){
+				flex-direction: row;
+			}
+			a {
+				margin-left: 3px;
+				background: linear-gradient(265.54deg, #159E74 33.48%, #2A47A0 48.67%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				text-fill-color: transparent;
+				position: relative;
+				&::before{
+					content:'';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					height: 1px;
+					background-color: #aaaaaa;
+					opacity: 0;
+					transition: all 0.3s ease 0s;
+				}
+				@media (max-width: 1023px){
+					margin-left: 0;
+				}
+				@media (max-width: 768px){
+					margin-left: 3px;
+				}
+				&:hover{
+					&::before{
+						opacity: 1;
+					}
+				}
+			}
+			&-wrapper {
+				flex: 1 1 auto;
+				margin-top: 15px;
+				@media (max-width: 768px){
+					margin-top: 10px;
+				}
+			}
+		} 
+		&__footer {
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 130%;
+			letter-spacing: -0.02em;
+			color: #585858;
+			@media (max-width: 768px){
+				margin-top: 30px;
+			}
+		}
+}
+.ymaps-2-1-79-map-copyrights-promo {
+	display: none;
+}
+.ymaps-2-1-79-copyright.ymaps-2-1-79-copyright_logo_no {
+	display: none;
+}
+@media (max-width: 768px){
+	.map * {
+		touch-action: auto
+	}
+}

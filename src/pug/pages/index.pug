@@ -1,0 +1,704 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'Главная'
+		};
+
+block main
+	section.first-screen
+		.first-screen__img-back
+		.first-screen__container.container 
+			.first-screen__body 
+				.first-screen__title Я Доктор Александр<br> Барановский 
+				.first-screen__subtitle и я провожу имплантации зубов<br> честно и ответственно
+			.first-screen__card 
+				.first-screen__card-title Импланты любых ценовых сегментов <br> по чеcтной цене:
+				.first-screen__card-bottom 
+					.first-screen__card-list
+						ul
+							li Miss 
+								span 17 400 руб.
+							li AnyOne 
+								span 24 000 руб.
+							li Straumann 
+								span 35 500 руб.
+					.first-screen__card-btn.free-consult-btn Бесплатная консультация
+			.first-screen__img 
+				img(src="images/first-screen/main.png", alt="alt")
+				img(src="images/first-screen/main-mob.png", alt="alt")
+			.first-screen__play 
+				a(href="https://media.w3.org/2010/05/sintel/trailer.mp4" data-fancybox-plyr) 
+					figure
+						img(src="images/first-screen/play.svg", alt="alt")
+						.first-screen__play-desc 
+							img(src="images/first-screen/youtube.svg", alt="alt")
+							span Моя видео - визитка 
+		.first-screen__modal.modal-first-screen 
+			.modal-first-screen__back 
+			.modal-first-screen__content
+				.modal-first-screen__close
+				.modal-first-screen__title Пожалуйста, оставьте свои контакты и мой ассисент перезвонит Вам
+				form(action="" method="method").modal-first-screen__form
+					.modal-first-screen__input-wrapper
+						input.modal-first-screen__input(type="text" placeholder="Введите имя") 
+					.modal-first-screen__input-wrapper
+						input.modal-first-screen__input(type="tel" placeholder="Ввведите телефон")
+					.modal-first-screen__btn-wrapper
+						button.modal-first-screen__btn(type='submit') Жду звонка
+
+
+	section.about
+		.about__container.container 
+			.about__content 
+				.about__top.top-about 
+					.top-about__title.general-title Кратко обо мне
+					.top-about__body 
+						p Я специализируюсь на имплантации и протезировании зубов с использваонием технологии цифрового формирования улыбки и диагностике полости рта. 
+						ul
+							p Образование:
+							li Московский Государственный Медико-Стоматологический Университет / врач-стоматолог
+							li Московский Государственный Медико-Стоматологический Университет / Курс по специализации - стоматология ортопедическая
+							li Российский Университет Дружбы Народов / Курс "стоматология ортопедическая"
+						span Специальность: Стоматолог ортопед
+						span Стаж работы более 20 лет
+				.about__bottom.bottom-about
+					.bottom-about__header 
+						.bottom-about__title Сертификаты
+						.bottom-about__btns.swiper-btns 
+							.bottom-about__btn.bottom-about__btn-prev.swiper-btn.swiper-btn-prev
+								svg(width='29' height='8' viewBox='0 0 29 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+									path(d='M0.646439 4.35355C0.451178 4.15829 0.451178 3.84171 0.646439 3.64645L3.82842 0.464466C4.02368 0.269204 4.34026 0.269204 4.53553 0.464466C4.73079 0.659728 4.73079 0.976311 4.53553 1.17157L1.7071 4L4.53553 6.82843C4.73079 7.02369 4.73079 7.34027 4.53553 7.53553C4.34026 7.7308 4.02368 7.7308 3.82842 7.53553L0.646439 4.35355ZM28.6285 4.5H0.999992V3.5H28.6285V4.5Z' fill='#818591')
+							.bottom-about__btn.bottom-about__btn-next.swiper-btn.swiper-btn-next
+								svg(width='29' height='8' viewBox='0 0 29 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+									path(d='M28.4487 4.35355C28.644 4.15829 28.644 3.84171 28.4487 3.64645L25.2667 0.464466C25.0715 0.269204 24.7549 0.269204 24.5596 0.464466C24.3644 0.659728 24.3644 0.976311 24.5596 1.17157L27.3881 4L24.5596 6.82843C24.3644 7.02369 24.3644 7.34027 24.5596 7.53553C24.7549 7.7308 25.0715 7.7308 25.2667 7.53553L28.4487 4.35355ZM0.466614 4.5H28.0952V3.5H0.466614V4.5Z' fill='#818591')
+					.bottom-about__swiper.swiper 
+						.swiper-wrapper
+							.bottom-about__slide.swiper-slide 
+								.bottom-about__img 
+									a(href="images/about/1.jpg" data-fancybox="gallery1") 
+										img(src="images/about/1.jpg", alt="alt")
+							.bottom-about__slide.swiper-slide 
+								.bottom-about__img 
+									a(href="images/about/2.jpg" data-fancybox="gallery1") 
+										img(src="images/about/2.jpg", alt="alt")
+							.bottom-about__slide.swiper-slide 
+								.bottom-about__img 
+									a(href="images/about/3.jpg" data-fancybox="gallery1") 
+										img(src="images/about/3.jpg", alt="alt")
+							.bottom-about__slide.swiper-slide 
+								.bottom-about__img 
+									a(href="images/about/4.jpg" data-fancybox="gallery1") 
+										img(src="images/about/4.jpg", alt="alt")
+							.bottom-about__slide.swiper-slide 
+								.bottom-about__img 
+									a(href="images/about/5.jpg" data-fancybox="gallery1") 
+										img(src="images/about/5.jpg", alt="alt")
+							.bottom-about__slide.swiper-slide 
+								.bottom-about__img 
+									a(href="images/about/6.jpg" data-fancybox="gallery1") 
+										img(src="images/about/6.jpg", alt="alt")
+
+
+	section.types 
+		.types__container.container
+			.types__title.general-title Все виды имплантации в одном месте
+			.types__swiper.swiper 
+				.swiper-wrapper
+					.types__slide.swiper-slide 
+						.types__item.item-types 
+							.item-types__img 
+								img(src="images/types/1.jpg", alt="alt")
+							p Одномоментная имплантация зубов
+							.item-types__list
+								ul
+									li Сокращение срока восстановления зуба.
+									li Предотвращение атрофии зубной ткани.
+									li Минимальная травматичность за счёт сокращения числа операций.
+									li Идеальная эстетика нового зуба.
+					.types__slide.swiper-slide 
+						.types__item.item-types 
+							.item-types__img 
+								img(src="images/types/2.jpg", alt="alt")
+							p Двухэтапная имплантация зубов
+							.item-types__list
+								ul
+									li Наиболее изученная технология — 45 лет мировой практики.
+									li Решает любые проблемы отсутствующего зубного ряда.
+									li Достигается максимальный эстетический результат.
+									li Идеальна для зубов с высокой жевательной нагрузкой.
+									li Позволяет использование протезов с опорой на имплантаты, а не на родные зубы.
+					.types__slide.swiper-slide 
+						.types__item.item-types 
+							.item-types__img 
+								img(src="images/types/3.jpg", alt="alt")
+							p Одноэтапная имплантация зубов
+							.item-types__list
+								ul
+									li Технология схожа с двухэтапной имплантацией, но реализуется значительно быстрее
+									li Имеет больше противопоказаний, чем двухэтапная имплантация
+					.types__slide.swiper-slide 
+						.types__item.item-types 
+							.item-types__img 
+								img(src="images/types/4.jpg", alt="alt")
+							p Специальные методы лечения
+							.item-types__list
+								ul
+									li Подбор плана лечения под нестандартную ситуацию
+		.types__ask.ask-types
+			.ask-types__container.container
+				.ask-types__card
+					.ask-types__title Спросите у моего ассистента,какой вид имплантации больше подойдет в вашем случае
+					.ask-types__btn.free-consult-btn Бесплатная консультация
+					.ask-types__img 
+
+
+	section.reviews
+		.reviews__container.container 
+			.reviews__header 
+				.reviews__title.general-title Отзывы на независимых рейтингах
+				.reviews__btns.swiper-btns 
+					.reviews__btn.reviews__btn-prev.swiper-btn.swiper-btn-prev
+						svg(width='29' height='8' viewBox='0 0 29 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path(d='M0.646439 4.35355C0.451178 4.15829 0.451178 3.84171 0.646439 3.64645L3.82842 0.464466C4.02368 0.269204 4.34026 0.269204 4.53553 0.464466C4.73079 0.659728 4.73079 0.976311 4.53553 1.17157L1.7071 4L4.53553 6.82843C4.73079 7.02369 4.73079 7.34027 4.53553 7.53553C4.34026 7.7308 4.02368 7.7308 3.82842 7.53553L0.646439 4.35355ZM28.6285 4.5H0.999992V3.5H28.6285V4.5Z' fill='#818591')
+					.reviews__btn.reviews__btn-next.swiper-btn.swiper-btn-next
+						svg(width='29' height='8' viewBox='0 0 29 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path(d='M28.4487 4.35355C28.644 4.15829 28.644 3.84171 28.4487 3.64645L25.2667 0.464466C25.0715 0.269204 24.7549 0.269204 24.5596 0.464466C24.3644 0.659728 24.3644 0.976311 24.5596 1.17157L27.3881 4L24.5596 6.82843C24.3644 7.02369 24.3644 7.34027 24.5596 7.53553C24.7549 7.7308 25.0715 7.7308 25.2667 7.53553L28.4487 4.35355ZM0.466614 4.5H28.0952V3.5H0.466614V4.5Z' fill='#818591')
+			.reviews__swiper.swiper 
+				.swiper-wrapper
+					.reviews__slide.swiper-slide 
+						a(href="" target="_blank").reviews__column 
+							figure
+								.reviews__img 
+									img(src="images/reviews/1.svg", alt="alt")
+								.reviews__stars 
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-half.svg", alt="alt")
+								.reviews__rating Рейтинг 4,5
+					.reviews__slide.swiper-slide 
+						a(href="" target="_blank").reviews__column 
+							figure
+								.reviews__img 
+									img(src="images/reviews/2.svg", alt="alt")
+								.reviews__stars 
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-half.svg", alt="alt")
+								.reviews__rating Рейтинг 4,5
+					.reviews__slide.swiper-slide 
+						a(href="" target="_blank").reviews__column 
+							figure
+								.reviews__img 
+									img(src="images/reviews/3.svg", alt="alt")
+								.reviews__stars 
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+								.reviews__rating Рейтинг 5,0 
+					.reviews__slide.swiper-slide 
+						a(href="" target="_blank").reviews__column 
+							figure
+								.reviews__img 
+									img(src="images/reviews/4.svg", alt="alt")
+								.reviews__stars 
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+								.reviews__rating Рейтинг 5,0
+					.reviews__slide.swiper-slide 
+						a(href="" target="_blank").reviews__column 
+							figure
+								.reviews__img 
+									img(src="images/reviews/5.svg", alt="alt")
+								.reviews__stars 
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+								.reviews__rating Рейтинг 5,0
+					.reviews__slide.swiper-slide 
+						a(href="" target="_blank").reviews__column 
+							figure
+								.reviews__img 
+									img(src="images/reviews/6.svg", alt="alt")
+								.reviews__stars 
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-half.svg", alt="alt")
+								.reviews__rating Рейтинг 4,5
+					.reviews__slide.swiper-slide 
+						a(href="" target="_blank").reviews__column 
+							figure
+								.reviews__img 
+									img(src="images/reviews/7.svg", alt="alt")
+								.reviews__stars 
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-empty.svg", alt="alt")
+								.reviews__rating Рейтинг 4,0
+					.reviews__slide.swiper-slide 
+						a(href="" target="_blank").reviews__column 
+							figure
+								.reviews__img 
+									img(src="images/reviews/8.svg", alt="alt")
+								.reviews__stars 
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+									img(src="images/reviews/star-full.svg", alt="alt")
+								.reviews__rating Рейтинг 5,0
+
+
+	section.numbers
+		.numbers__container.container 
+			.numbers__img 
+				img(src="images/numbers/tooth.png", alt="alt")
+			.numbers__left
+				.numbers__title.general-title Лечу честно и ответственно
+				.numbers__text В основе моей работы лежат личностные взаимоотношения с пациентами, поэтому я не допускаю текучки в делах. Наоборот, я помню каждую особенную ситуацию каждого пациента.
+				.numbers__left-img
+					img(src="images/numbers/text.svg", alt="alt")
+					img(src="images/numbers/signature.png", alt="alt").numbers__left-signature
+			.numbers__right 
+				.numbers__card 	
+					.numbers__items 
+						.numbers__item.item-numbers 
+							.item-numbers__column 
+								.item-numbers__num 
+									span.item-numbers__num-big.count 20
+									span.item-numbers__num-small лет
+								.item-numbers__title Опыта работы
+						.numbers__item.item-numbers 
+							.item-numbers__column 
+								.item-numbers__num 
+									span.item-numbers__num-big.count 10 
+									span.item-numbers__num-big.item-numbers__num-big-desk 000
+									span.item-numbers__num-small.item-numbers__num-small-mob 000
+								.item-numbers__title Пациентов вылечено
+						.numbers__item.item-numbers 
+							.item-numbers__column 
+								.item-numbers__num 
+									span.item-numbers__num-big.count 100
+									span.item-numbers__num-small % 
+								.item-numbers__title Фиксация цены в договоре
+						.numbers__item.item-numbers 
+							.item-numbers__column 
+								.item-numbers__num 
+									span.item-numbers__num-big.count 99
+									span.item-numbers__num-small % 
+								.item-numbers__title Приживаемость имплантов
+					.numbers__btn-wrapper
+						.numbers__btn 
+							span Лучший уровень сервиса по разумным ценам
+			.numbers__signature-mob 
+				img(src="images/numbers/signature-mob.svg", alt="alt")
+
+
+	section.advantages
+		.advantages__container.container 
+			.advantages__title.general-title.general-title-white Преимущества
+			.advantages__swiper.swiper
+				.swiper-wrapper
+					.advantages__item.swiper-slide 
+						span Беспланый панорамный снимок
+					.advantages__item.swiper-slide 
+						span Бесплатное составление плана лечения
+					.advantages__item.swiper-slide 
+						span Пожизненная гарантия на все импланты
+					.advantages__item.swiper-slide 
+						span Бесплатное пожизненное послеаперационное наблюдение каждые пол года
+
+
+	section.comment
+		.comment__container.container
+			.comment__top
+				.comment__text 
+					p Обращаясь к частному специалисту, Вы получаете принципиально иной уровень услуги и цен, сравнительно с  большой организацией. 
+					p Это применимо практически ко всем сферам жизни и бизнеса, начиная от IT услуг и заканчивая заканчивая мелким бытовым ремонтом или услугами автосервиса, но ниже я поясню основные отличия для своей сферы - стоматология и имплантация:
+				.comment__img 	
+					img(src="images/comment/comment.png", alt="alt")
+
+			.comment__swiper.swiper 
+				.swiper-wrapper
+					.comment__slide.comment__slide-first.swiper-slide
+						.comment__item.item-comment
+							.item-comment__title Частная практика 
+							.item-comment__content 
+								.item-comment__lits 
+									ul
+										li.item-comment__item1 
+											span Личная ответственность врача перед пациентами. Врач отвечает своим имиджем. 
+										li.item-comment__item2 
+											span Качество на высшем уровне
+										li.item-comment__item3 
+											span Стоимость ниже за счет отсутсвия лишних издержек 
+										li.item-comment__item4 
+											span Индивидульный подход и возможность уделить внимание каждому конкретному случаю. Отсутсвие конвеерного типа обслуживания
+										li.item-comment__item5 
+											span Единственная мотивация - решение  проблемы пациента наилучшим образом и получение положительных рекомендаций
+										li.item-comment__item6 
+											span Первичная консультация проводится лично лечащим врачом 
+					.comment__slide.comment__slide-second.swiper-slide
+						.comment__item.item-comment
+							.item-comment__title Сетевая клиника
+							.item-comment__content 
+								.item-comment__lits 
+									ul
+										li.item-comment__item1 
+											span Только общая ответственность. Общение по организационным, юридическим и имиджевым вопросам проходит с разными сотрудниками клиники
+										li.item-comment__item2 
+											span Качество на высшем уровне
+										li.item-comment__item3 
+											span Дополнительная стоимость формируется за счет содержания штата персонала, маркетингового бюджета, зарплаты управляющих и прибыли учредителей
+										li.item-comment__item4 
+											span Регламент большой клиники подразумевает уделение 30 минут на консультацию, за вычетом человеческого фактора врача и предыдущих пациентов в очереди
+										li.item-comment__item5 
+											span Есть план по продажам
+										li.item-comment__item6 
+											span Первичная консультация проводятся младшим клиническим персоналом
+
+
+	section.work
+		.work__container.container 
+			.work__header 
+				.work__title.general-title Работы
+				.work__btns.swiper-btns 
+					.work__btn.work__btn-prev.swiper-btn.swiper-btn-prev
+						svg(width='29' height='8' viewBox='0 0 29 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path(d='M0.646439 4.35355C0.451178 4.15829 0.451178 3.84171 0.646439 3.64645L3.82842 0.464466C4.02368 0.269204 4.34026 0.269204 4.53553 0.464466C4.73079 0.659728 4.73079 0.976311 4.53553 1.17157L1.7071 4L4.53553 6.82843C4.73079 7.02369 4.73079 7.34027 4.53553 7.53553C4.34026 7.7308 4.02368 7.7308 3.82842 7.53553L0.646439 4.35355ZM28.6285 4.5H0.999992V3.5H28.6285V4.5Z' fill='#818591')
+					.work__btn.work__btn-next.swiper-btn.swiper-btn-next
+						svg(width='29' height='8' viewBox='0 0 29 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path(d='M28.4487 4.35355C28.644 4.15829 28.644 3.84171 28.4487 3.64645L25.2667 0.464466C25.0715 0.269204 24.7549 0.269204 24.5596 0.464466C24.3644 0.659728 24.3644 0.976311 24.5596 1.17157L27.3881 4L24.5596 6.82843C24.3644 7.02369 24.3644 7.34027 24.5596 7.53553C24.7549 7.7308 25.0715 7.7308 25.2667 7.53553L28.4487 4.35355ZM0.466614 4.5H28.0952V3.5H0.466614V4.5Z' fill='#818591')
+			.work__swiper.swiper 
+				.swiper-wrapper 
+					.work__slide.swiper-slide 
+						.work__img-wrapper 
+							.work__img 
+								img(src="images/work/1.png", alt="alt")
+						.work__body 
+							.work__body-title Одномоментная имплантация и съемное протезирование
+							.work__body-items 
+								div
+									p Случай:
+									p частичное отсутствие зубов, в результате периодонтита разрушены оставшиеся зубы, костная ткань атрофирована.
+								div
+									p Работа:
+									p удаление зубов, одномоментная имплантация с моментальной нагрузкой, на 3 день установлен металлопластмассовый мост
+								div
+									p Количество посещений:
+									p 1 посещение для зуба, на 3 день установлен металлопластмассовый мост
+								div
+									p Материалы:
+									p имплант MIS (Израиль), коронка на диоксиде циркония с абатментом (Германия).
+					.work__slide.swiper-slide 
+						.work__img-wrapper 
+							.work__img 
+								img(src="images/work/2.png", alt="alt")
+						.work__body 
+							.work__body-title Одномоментная имплантация и съемное протезирование
+							.work__body-items 
+								div
+									p Случай:
+									p частичное отсутствие зубов, в результате периодонтита разрушены оставшиеся зубы, костная ткань атрофирована.
+								div
+									p Работа:
+									p удаление зубов, одномоментная имплантация с моментальной нагрузкой, на 3 день установлен металлопластмассовый мост
+								div
+									p Количество посещений:
+									p 1 посещение для зуба, на 3 день установлен металлопластмассовый мост
+								div
+									p Материалы:
+									p имплант MIS (Израиль), коронка на диоксиде циркония с абатментом (Германия).
+
+
+	section.prices
+		.prices__container.container 
+			.prices__title.general-title Цены
+			.prices__img-back 
+			.prices__items
+				.prices__items-left 
+					.prices__item.item-prices  
+						.item-prices__title.item-prices__title-general Общее
+						.item-prices__content.item-prices__content-top-brd 
+							.item-prices__row.item-prices__row-top-hv 
+								.item-prices__num 1.
+								.item-prices__name Первичная консультация
+								.item-prices__price Бесплатно
+							.item-prices__row 
+								.item-prices__num 2.
+								.item-prices__name Панорамный снимок 
+								.item-prices__price Бесплатно
+							.item-prices__row 
+								.item-prices__num 3.
+								.item-prices__name Панорамный снимок 
+								.item-prices__price 3 900 руб.
+					.prices__item.item-prices  
+						.item-prices__title Имплантация зубов
+						.item-prices__content.item-prices__content-bottom-brd 
+							.item-prices__row 
+								.item-prices__num 4.
+								.item-prices__name Имплант ALPHA BIO (Израиль)
+								.item-prices__discount -50%
+								.item-prices__price.item-prices__price-wf 
+									.item-prices__price-without 15 000
+									.item-prices__price-full 7 500  руб.
+							.item-prices__row 
+								.item-prices__num 5.
+								.item-prices__name Имплантант Nobel Biocare (Швейцария-США)
+								.item-prices__discount -50%
+								.item-prices__price.item-prices__price-wf 
+									.item-prices__price-without 55 000
+									.item-prices__price-full 27 500 руб.
+							.item-prices__row 
+								.item-prices__num 6.
+								.item-prices__name Имплант MIS (Израиль)
+								.item-prices__discount -50%
+								.item-prices__price.item-prices__price-wf 
+									.item-prices__price-without 19 800
+									.item-prices__price-full 9 900  руб.
+							.item-prices__row 
+								.item-prices__num 7.
+								.item-prices__name Имплант Astra tech (Швеция)
+								.item-prices__discount -50%
+								.item-prices__price.item-prices__price-wf 
+									.item-prices__price-without 52 000
+									.item-prices__price-full 26 000  руб.
+							.item-prices__row 
+								.item-prices__num 8.
+								.item-prices__name Имплантант XIVE (Германия)
+								.item-prices__discount -50%
+								.item-prices__price.item-prices__price-wf 
+									.item-prices__price-without 38 000
+									.item-prices__price-full 19 000  руб.
+							.item-prices__row 
+								.item-prices__num 9.
+								.item-prices__name Имплант Штрауман (Швейцария)
+								.item-prices__discount -50%
+								.item-prices__price.item-prices__price-wf 
+									.item-prices__price-without 44 000
+									.item-prices__price-full 22 000 руб.
+							.item-prices__row 
+								.item-prices__num 10.
+								.item-prices__name Односторонний закрытый синус-лифтинг
+								.item-prices__discount
+								.item-prices__price от<br> 12 320 руб.
+							.item-prices__row 
+								.item-prices__num 11.
+								.item-prices__name Имплант Dentium
+								.item-prices__discount -50%
+								.item-prices__price.item-prices__price-wf 
+									.item-prices__price-without 34 000
+									.item-prices__price-full 17 000  руб.
+							.item-prices__row 
+								.item-prices__num 12.
+								.item-prices__name Имплант Impro
+								.item-prices__discount -50%
+								.item-prices__price.item-prices__price-wf 
+									.item-prices__price-without 28 000
+									.item-prices__price-full 14 000 руб.
+							.item-prices__row.item-prices__row-bottom-hv 
+								.item-prices__num 13.
+								.item-prices__name Имплант ANYONE (Южная Корея)
+								.item-prices__discount -50%
+								.item-prices__price.item-prices__price-wf 
+									.item-prices__price-without 27 000
+									.item-prices__price-full 13 500 руб. 
+
+
+				.prices__items-right 
+					.prices__item.item-prices  
+						.item-prices__title Протезирование зубов
+						.item-prices__content.item-prices__content-top-brd 
+							.item-prices__row.item-prices__row-top-hv 
+								.item-prices__num 14.
+								.item-prices__name Коронка из диоксида циркония
+								.item-prices__price 18 710 руб.
+							.item-prices__row 
+								.item-prices__num 15.
+								.item-prices__name Коронка металлокерамическая (США)
+								.item-prices__price 11 880 руб.
+							.item-prices__row 
+								.item-prices__num 16.
+								.item-prices__name Коронка металлокерамическая (США)
+								.item-prices__price 11 800  руб.
+							.item-prices__row 
+								.item-prices__num 17.
+								.item-prices__name Керамический винир
+								.item-prices__price 15 660 руб.
+							.item-prices__row 
+								.item-prices__num 18.
+								.item-prices__name Винир из диоксид циркония
+								.item-prices__price 18 290 руб.
+							.item-prices__row 
+								.item-prices__num 19.
+								.item-prices__name Съемный протез с импортными зубами
+								.item-prices__price 8 580 руб.
+							.item-prices__row 
+								.item-prices__num 20.
+								.item-prices__name Нейлоновый протез
+								.item-prices__price 19 250 руб.
+							.item-prices__row 
+								.item-prices__num 21.
+								.item-prices__name Коронка на имплантант металлокерамическая
+								.item-prices__price от<br> 12 010 руб.
+
+					.prices__item.item-prices  
+						.item-prices__title Лечение зубов
+						.item-prices__content 
+							.item-prices__row 
+								.item-prices__num 14.
+								.item-prices__name Пломба светоотверждаемая (Спектрум)
+								.item-prices__price 5 060 руб..
+
+					.prices__item.item-prices  
+						.item-prices__title Удаление зубов
+						.item-prices__content 
+							.item-prices__row 
+								.item-prices__num 14.
+								.item-prices__name Удаление зуба
+								.item-prices__price от<br> 3 360 руб.
+
+					.prices__item.item-prices  
+						.item-prices__title Чистка зубов
+						.item-prices__content.item-prices__content-bottom-brd 
+							.item-prices__row.item-prices__row-bottom-hv 
+								.item-prices__num 14.
+								.item-prices__name Комплексная процедура профессиональной гигиены полости рта<br> (удаление зубного камня ультразвуком + отбеливание Air Flow +<br> полировка)
+								.item-prices__price 5 880 руб.
+
+				.prices__show-more-btn-wrapper
+					.prices__show-more-btn.prices__show-more-btn-show._active Показать больше
+					.prices__show-more-btn.prices__show-more-btn-hide Скрыть
+			.prices__btn-bottom-wrapper
+				.prices__btn-bottom.free-consult-btn Проконсультироваться с ассистентом
+
+	section.stages
+		.stages__container.container 
+			.stages__title.general-title Этапы работы
+			.stages__text.stages-text Сроки и этапы лечения могут отличаться от Вашей конретной ситуации и выбора метода протезирования и составлять от 2 до 6 месяцев.  Ниже я укажу стадии для двухэтапной имплатнтации, в виду того, что она наиболее популярна и имеет наименьшее количество противопоказаний:
+			.stages__items 
+				.stages__item.item-stages.item-stages1
+					.item-stages__left 
+						.item-stages__title Подготовка
+						.item-stages__list
+							ul
+								li Первым делом проводим общее обследование: мы берем анализы крови и проводим компьютерную томографию челютей. Детально обследуем зубочелюстную систему;
+								li Далее мы проводим сонацию полости рта — лечим десна, избавляемся от кариеса и удаляем зубной камень;
+								li Подбор импланта также проходит на этом этапе.
+						.item-stages__icons-swiper.swiper 
+							.swiper-wrapper 
+								.item-stages__icon.item-stages__icon1.swiper-slide
+									img(src="images/stages/icon1.png", alt="alt")
+								.item-stages__icon.item-stages__icon2.swiper-slide
+									img(src="images/stages/icon2.png", alt="alt")
+								.item-stages__icon.item-stages__icon3.swiper-slide
+									img(src="images/stages/icon3.png", alt="alt")
+					.item-stages__right 
+						.item-stages__img 
+							img(src="images/stages/1.jpg", alt="alt")
+				.stages__item.item-stages.item-stages2
+					.item-stages__left 
+						.item-stages__title Наращивание костной ткани
+						.item-stages__text-wrapper
+							p Необходимость в этом промежуточном этапе возникает в случаях, когда после потери зубов проходит значительное время. 
+							p В месте потери зуба  происходит уменьшение объема котсной ткани (атрофия) и  фиксация импланта становится невозможна без дополнительного наращивания объема кости.
+						.item-stages__btn Этап опционален
+					.item-stages__right 
+						.item-stages__img 
+							img(src="images/stages/2.jpg", alt="alt")
+				.stages__item.item-stages.item-stages3
+					.item-stages__left 
+						.item-stages__title Протезирование
+						.item-stages__list
+							ul
+								li Установка абатмента (соединительного элемента между имплантатом и коронкой).
+								li Изготовление и установка зубной коронки.
+						.item-stages__descr 
+							.item-stages__descr-img 
+								video(src="video/zub.gif.mp4", autoplay="", loop="")
+							.item-stages__descr-text Используем современные технологии для восстановления овала лица
+					.item-stages__right 
+						.item-stages__img 
+							img(src="images/stages/3.jpg", alt="alt")
+				.stages__item.item-stages.item-stages4 
+					.item-stages__left 
+						.item-stages__title Пожизненная гарантия
+						.item-stages__list
+							ul
+								li Гарантия на работу врача 5 лет
+								li Бесплатное пожизненное сервисное обслуживание, которое включает профосмотры между этапами и далее, каждые пол года по желанию пациента
+						.item-stages__descr 
+							.item-stages__descr-img 
+								img(src="images/stages/descr1.png", alt="alt")
+							.item-stages__descr-text Пожизненная гарантия на имплант
+					.item-stages__right 
+						.item-stages__img 
+							img(src="images/stages/4.jpg", alt="alt")
+
+	section.help
+		.help__img
+		.help__container.container 
+			.help__title Помогаю даже с самых сложных ситуациях
+			.help__text Выполняю все виды протезирования и уверен, что даже в самых сложных ситуациях можно достингнуть желаемого результата
+			.help__btn.free-consult-btn Обратный звонок
+
+	section.office 
+		.office__container.container 
+			.office__header 
+				.office__title.general-title Мой кабинет
+				.office__btns.swiper-btns 
+					.office__btn.office__btn-prev.swiper-btn.swiper-btn-prev
+						svg(width='29' height='8' viewBox='0 0 29 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path(d='M0.646439 4.35355C0.451178 4.15829 0.451178 3.84171 0.646439 3.64645L3.82842 0.464466C4.02368 0.269204 4.34026 0.269204 4.53553 0.464466C4.73079 0.659728 4.73079 0.976311 4.53553 1.17157L1.7071 4L4.53553 6.82843C4.73079 7.02369 4.73079 7.34027 4.53553 7.53553C4.34026 7.7308 4.02368 7.7308 3.82842 7.53553L0.646439 4.35355ZM28.6285 4.5H0.999992V3.5H28.6285V4.5Z' fill='#818591')
+					.office__btn.office__btn-next.swiper-btn.swiper-btn-next
+						svg(width='29' height='8' viewBox='0 0 29 8' fill='none' xmlns='http://www.w3.org/2000/svg')
+							path(d='M28.4487 4.35355C28.644 4.15829 28.644 3.84171 28.4487 3.64645L25.2667 0.464466C25.0715 0.269204 24.7549 0.269204 24.5596 0.464466C24.3644 0.659728 24.3644 0.976311 24.5596 1.17157L27.3881 4L24.5596 6.82843C24.3644 7.02369 24.3644 7.34027 24.5596 7.53553C24.7549 7.7308 25.0715 7.7308 25.2667 7.53553L28.4487 4.35355ZM0.466614 4.5H28.0952V3.5H0.466614V4.5Z' fill='#818591')
+			.office__swiper.swiper 
+				.swiper-wrapper
+					.office__slide.swiper-slide 
+						.office__img 
+							a(href="images/office/1.png" data-fancybox="gallery2") 
+								img(src="images/office/1.png", alt="alt")
+					.office__slide.swiper-slide 
+						.office__img 
+							a(href="images/office/2.png" data-fancybox="gallery2") 
+								img(src="images/office/2.png", alt="alt")
+					.office__slide.swiper-slide 
+						.office__img 
+							a(href="images/office/1.png" data-fancybox="gallery2") 
+								img(src="images/office/1.png", alt="alt")
+					.office__slide.swiper-slide 
+						.office__img 
+							a(href="images/office/2.png" data-fancybox="gallery2") 
+								img(src="images/office/2.png", alt="alt")
+
+	section.contacts
+		.contacts__container.container 
+			.contacts__title.general-title Контакты
+			.contacts__map-wrapper
+				#contacts__map.contacts__map 
+				.contacts__block-loc-wrapper
+					.contacts__block-loc 
+						.contacts__adress Адрес: г. Москва, ул. Марксистская, д.5
+						.contacts__tel Тел: 
+							a(href="tel:4954281873") +7 (495) 428-18-73
+						.contacts__email-wrapper
+							.contacts__email E-mail: 
+								a(href="mailto:info@implantcity.ru") info@implantcity.ru
+						.contacts__footer Лицензия на осуществление медицинской деятельности № ЛО-77-01-014631
